@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ポートフォリオ | 鈴木明日香</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="鈴木明日香の就活用ポートフォリオ。Java / Spring Boot / PostgreSQL を中心に学習し、Webアプリ開発からデータ活用へ挑戦しています。">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <h1 class="logo">鈴木明日香 Portfolio</h1>
+      <nav class="nav">
+        <a href="#about">自己紹介</a>
+        <a href="#skills">スキル</a>
+        <a href="#works">制作実績</a>
+        <a href="#contact">連絡先</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+      <h2>Webアプリ開発からデータ活用へ挑戦中のジュニアエンジニア</h2>
+      <p class="hero-sub">
+      Spring Boot を用いたアプリ開発経験を通じて、PostgreSQL・SQLを中心にデータベース分野への関心を広げています。
+      </p>
+
+        <div class="hero-links">
+          <a class="btn" href="#works">実績を見る</a>
+          <a class="btn ghost" href="https://github.com/suzuki-asuka0308/cosmetics-manager" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h3>自己紹介</h3>
+        <p>
+          事務職経験を経てエンジニアを志望。Java 基礎から Spring Boot、PostgreSQL、MyBatis を学習し、
+          自作アプリの要件定義〜設計〜実装まで個人で完走しました。
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h3>スキル</h3>
+        <p class="level-note">★＝基礎理解 ／ ★★＝学習・制作で使用 ／ ★★★＝実務レベル</p>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <h4>言語</h4>
+            <ul>
+              <li>Java ★★☆</li>
+              <li>SQL ★★☆</li>
+              <li>HTML / CSS ★★☆</li>
+              <li>JavaScript ★☆☆</li>
+            </ul>
+          </div>
+
+          <div class="skill-item">
+            <h4>フレームワーク / ライブラリ</h4>
+            <ul>
+              <li>Spring Boot ★★☆</li>
+              <li>MyBatis ★★☆</li>
+              <li>Thymeleaf ★★☆</li>
+            </ul>
+          </div>
+
+          <div class="skill-item">
+            <h4>DB / ミドル</h4>
+            <ul>
+              <li>PostgreSQL ★★☆</li>
+            </ul>
+          </div>
+
+          <div class="skill-item">
+            <h4>ツール</h4>
+            <ul>
+              <li>Git / GitHub ★★☆</li>
+              <li>VS Code ★★☆</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works" class="section">
+      <div class="wrap">
+        <h3>制作実績</h3>
+
+        <!-- Work Card: 化粧品管理アプリ -->
+        <article class="work-card">
+          <div class="work-body">
+            <h4>化粧品管理アプリ</h4>
+            <p class="work-meta">
+              使用技術：
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">MyBatis</span>
+              <span class="badge">Thymeleaf</span>
+            </p>
+            <p>
+              ログイン後、商品を登録・編集・削除でき、<br class="br-md" />
+              お気に入り管理／検索／CSVエクスポートに対応。
+            </p>
+            <ul class="work-points">
+              <li>多対多（商品×カテゴリ）を中間テーブルで管理</li>
+              <li>入力バリデーション（必須・桁数・形式）を実装</li>
+              <li>CSV出力時の文字コード（UTF-8）と改行コードを調整</li>
+            </ul>
+
+            <div class="work-links">
+              <a class="btn" href="https://github.com/suzuki-asuka0308/cosmetics-manager" target="_blank" rel="noopener">GitHubコード</a>
+            </div>
+          </div>
+
+          <!-- スクリーンショット -->
+          <div class="gallery">
+            <figure>
+              <img src="images/login.png" loading="lazy" alt="ログイン画面" />
+              <figcaption>ログイン</figcaption>
+            </figure>
+            <figure>
+              <img src="images/admin-menu.png" loading="lazy" alt="管理者メニュー" />
+              <figcaption>管理者メニュー</figcaption>
+            </figure>
+            <figure>
+              <img src="images/product-list.png" loading="lazy" alt="商品一覧（管理者）" />
+              <figcaption>商品一覧（管理者）</figcaption>
+            </figure>
+            <figure>
+              <img src="images/product-detail.png" loading="lazy" alt="商品詳細" />
+              <figcaption>商品詳細</figcaption>
+            </figure>
+            <figure>
+              <img src="images/product-create.png" loading="lazy" alt="商品作成" />
+              <figcaption>商品作成</figcaption>
+            </figure>
+            <figure>
+              <img src="images/csv-export.png" loading="lazy" alt="CSV出力" />
+              <figcaption>CSV出力</figcaption>
+            </figure>
+            <figure>
+              <img src="images/user-menu.png" loading="lazy" alt="一般ユーザーメニュー" />
+              <figcaption>一般ユーザーメニュー</figcaption>
+            </figure>
+            <figure>
+              <img src="images/user-products.png" loading="lazy" alt="商品一覧（一般）" />
+              <figcaption>商品一覧（一般）</figcaption>
+            </figure>
+            <figure>
+              <img src="images/favorite-list.png" loading="lazy" alt="お気に入り一覧" />
+              <figcaption>お気に入り一覧</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="wrap">
+        <h3>連絡先</h3>
+        <ul class="contact-list">
+          <li>Email：<a href="mailto:suzuki.asuka0308@gmail.com">suzuki.asuka0308@gmail.com</a></li>
+          <li>GitHub：<a href="https://github.com/suzuki-asuka0308/cosmetics-manager" target="_blank" rel="noopener">cosmetics-manager</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>&copy; 2025 Asuka Suzuki — Last update: <time datetime="2025-08-25">2025-08-25</time></small>
+    </div>
+  </footer>
+</body>
+</html>
